@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quê hương của tôi</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">MT</a>
+        <nav class="mt-menu" id="mtMenu">
+            <a href="index.html" class="mt-link">Portfolio</a>
+            <a href="index2.html" class="mt-link active">Quê hương</a>
+            <a href="#projects" class="mt-link">Album</a>
+            <a href="#contact" class="contact-button">Liên hệ</a>
+        </nav>
+        <!-- Nút menu trên điện thoại -->
+        <button class="menu-button" id="menuButton">☰</button>
+    </header>
+
+    <section class="hometown-section" id="about">
+
+        <div class="hometown-header">
+            <span class="hometown-sub">— SÓC TRĂNG · VIỆT NAM</span>
+            <h2 class="hometown-main-title">Về miền phù sa nơi tôi lớn lên</h2>
+            <p class="hometown-intro-text">
+                Sóc Trăng — mảnh đất giao thoa văn hoá Kinh, Khmer, Hoa. Nơi những ngôi chùa vàng son đứng cạnh cánh đồng lúa, và hương bánh pía thơm suốt tuổi thơ tôi.
+            </p>
+            <p class="hometown-note">Bấm vào từng địa điểm để xem album ảnh.</p>
+        </div>
+
+        <div class="hometown-grid">
+            
+                <div class="scenery-card large-row" style="cursor: pointer;" onclick="openLightbox(this)" 
+                    data-category="NGÔI CHÙA KHMER CỔ KÍNH" 
+                    data-title="Chùa Som Rong" 
+                    data-album="chua-som-rong.jpg,chua-som-rong-1.jpg,chua-som-rong-2.jpg,chua-som-rong-3.jpg,chua-som-rong-4.jpg">
+                    
+                    <img src="chua-som-rong.jpg" alt="Chùa Som Rong" class="scenery-img">
+                    <span class="photo-badge">4 ảnh</span>
+                    
+                    <div class="scenery-content">
+                        <span class="scenery-category">NGÔI CHÙA KHMER CỔ KÍNH</span>
+                        <h3 class="scenery-title">Chùa Som Rong</h3>
+                        <p class="scenery-desc">
+                            Nổi tiếng với tượng Phật nằm dài 63m và kiến trúc Khmer tinh xảo, dát vàng lộng lẫy — biểu tượng tâm linh của Sóc Trăng.
+                        </p>
+                        <a href="#" class="view-album-link">Xem album ảnh</a>
+                    </div>
+                </div>
+
+
+
+            <div class="scenery-card large-row" style="cursor: pointer;" onclick="openLightbox(this)" 
+                    data-category="NGHỆ THUẬT TỪ MẢNH SÀNH" 
+                    data-title="Chùa Chén Kiểu" 
+                    data-album="chua-chen-kieu.jpg,chua-chen-kieu-1.jpg,chua-chen-kieu-2.jpg,chua-chen-kieu-3.jpg,chua-chen-kieu-4.jpg">
+
+                <img src="chua-chen-kieu.jpg" alt="Chùa Chén Kiểu" class="scenery-img">
+                <span class="photo-badge">4 ảnh</span>
+
+                <div class="scenery-content">
+                    <span class="scenery-category">NGHỆ THUẬT TỪ MẢNH SÀNH</span>
+                    <h3 class="scenery-title">Chùa Chén Kiểu</h3>
+                    <p class="scenery-desc">Ngôi chùa độc đáo được ốp hoàn toàn bằng các mảnh chén, đĩa sứ nhiều màu, tạo nên hoa văn rực rỡ dưới nắng.</p>
+                    <a href="#" class="view-album-link">Xem album ảnh</a>
+                </div>
+            </div>
+
+            <div class="scenery-card large-row" style="cursor: pointer;" onclick="openLightbox(this)" 
+                    data-category="HƯƠNG VỊ BÁNH PÍA TRĂM NĂM" 
+                    data-title="Tân Huê Viên" 
+                    data-album="tan-hue-vien.jpg,tan-hue-vien-1.jpg,tan-hue-vien-2.jpg,tan-hue-vien-3.jpg">
+
+                <img src="tan-hue-vien.jpg" alt="Tân Huê Viên" class="scenery-img">
+                <span class="photo-badge">4 ảnh</span>
+
+                <div class="scenery-content">
+                    <span class="scenery-category">HƯƠNG VỊ BÁNH PÍA TRĂM NĂM</span>
+                    <h3 class="scenery-title">Tân Huê Viên</h3>
+                    <p class="scenery-desc">Thương hiệu bánh pía trăm năm — vị ngọt bùi của đậu xanh, sầu riêng và trứng muối gói trọn ký ức quê hương.</p>
+                    <a href="#" class="view-album-link">Xem album ảnh</a>
+                </div>
+            </div>
+
+            <div class="scenery-card large-row" style="cursor: pointer;" onclick="openLightbox(this)" 
+                    data-category="ỐC ĐẢO XANH GIỮA SÔNG HẬU" 
+                    data-title="Cù Lao Dung" 
+                    data-album="cu-lao-dung.jpg,cu-lao-dung-1.jpg,cu-lao-dung-2.jpg,cu-lao-dung-3.jpg,cu-lao-dung-4.jpg">
+
+                <img src="cu-lao-dung.jpg" alt="Cù Lao Dung" class="scenery-img">
+                <span class="photo-badge">4 ảnh</span>
+
+                <div class="scenery-content">
+                    <span class="scenery-category">ỐC ĐẢO XANH GIỮA SÔNG HẬU</span>
+                    <h3 class="scenery-title">Cù Lao Dung</h3>
+                    <p class="scenery-desc">Vùng đất phù sa trù phú với những vườn dừa, rừng bần và trải nghiệm sông nước miền Tây nguyên bản.</p>
+                    <a href="#" class="view-album-link">Xem album ảnh</a>
+                </div>
+            </div>
+
+        </div>
+         
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <!-- Cột 1: Thông tin cá nhân -->
+            <div class="footer-column branding">
+                <h4 class="footer-name">Trương Thị <span class="highlight">Minh Thư</span></h4>
+                <p class="footer-sub">Sinh viên Kỹ sư Phần mềm · Sóc Trăng, Việt Nam</p>
+            </div>
+
+            <!-- Cột 2: Liên hệ -->
+            <div class="footer-column contact">
+                <h5 class="column-title">Liên hệ</h5>
+                <p class="contact-item">minhthu.dev@example.com</p>
+                <p class="contact-item">+84 · Sóc Trăng</p>
+            </div>
+
+            <!-- Cột 3: Bản quyền -->
+            <div class="footer-column copyright">
+                <p>© 2026 Minh Thư.</p>
+                <p>Bài tập Thiết kế & Phát triển Web.</p>
+            </div>
+
+        </div>
+    </footer>
+
+        <!-- HỘP THOẠI PHÓNG TO ALBUM ẢNH (LIGHTBOX MODAL) -->
+        <div id="lightboxModal" class="lightbox">
+            <!-- Nút đóng (X) -->
+            <span class="close-btn" onclick="closeLightbox()">&times;</span>
+            
+            <!-- Khối nội dung chính của Lightbox -->
+            <div class="lightbox-content">
+                <!-- Phần tiêu đề góc trên bên trái -->
+                <div class="lightbox-header">
+                    <span id="lightboxCategory" class="lightbox-category"></span>
+                    <h3 id="lightboxTitle" class="lightbox-title"></h3>
+                </div>
+
+                <!-- Vùng hiển thị hình ảnh -->
+                <div class="img-container">
+                    <img id="lightboxImg" src="" alt="Hình ảnh phóng to">
+                </div>
+
+                <!-- Nút chuyển ảnh sang trái (<) -->
+                <button class="nav-btn prev-btn" onclick="changeImage(-1)">&#10094;</button>
+                <!-- Nút chuyển ảnh sang phải (>) -->
+                <button class="nav-btn next-btn" onclick="changeImage(1)">&#10095;</button>
+            </div>
+        </div>
+
+</body>
+<script src="java2.js"></script>
+
+</html>

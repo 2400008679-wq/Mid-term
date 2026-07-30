@@ -1,0 +1,448 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #372918; 
+    color: #ffffff;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.banner {
+    position: relative;
+    min-height: 80vh; 
+    display: flex;
+    flex-direction: column;    
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;       
+    background-color: #372918;
+}
+
+.content-section {
+    background-color: #372918; 
+    padding: 40px 20px;
+    width: 100%;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+
+.sub-title {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #a3928a;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 68px;
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.highlight-text {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #dfb15b; 
+}
+
+.description {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #bfaaa0;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.btn-explore {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: transparent; 
+    border: 1px solid rgba(255, 255, 255, 0.4); 
+    padding: 12px 36px;
+    border-radius: 25px; 
+    transition: all 0.3s ease; 
+}
+
+.btn-explore:hover {
+    background-color: #c06345;
+    border-color: #c06345;    
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 20px rgba(192, 99, 69, 0.4); 
+}
+
+.btn-explore:active {
+    background-color: #a95236; 
+    border-color: #a95236;
+    transform: translateY(0);
+}
+
+.btn-explore .arrow {
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.bokeh-light {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(223, 177, 91, 0.08) 0%, rgba(223, 177, 91, 0) 70%);
+    filter: blur(50px);
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .navbar { padding: 20px 5%; }
+    .nav-links { display: none; }
+    .main-title { font-size: 44px; }
+    .description { font-size: 13px; }
+}
+
+.section-header {
+    padding: 100px 8% 20px 8%; 
+    background-color: #372918; 
+    display: flex;
+    align-items: baseline;    
+}
+
+.section-hint {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.3);
+    margin-right: 25px; 
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif; 
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.gallery-section {
+    background-color: #372918; 
+    padding: 20px 10% 80px 10%;
+}
+
+.filter-container {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.filter-btn.active {
+    background-color: #dfb15b;
+    color: #1e130c;
+    border-color: #dfb15b;
+    font-weight: 500;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    position: relative;
+    border-radius: 12px; 
+    overflow: hidden;
+    height: 260px; 
+}
+
+.grid-item.tall {
+    grid-row: span 2;
+    height: 540px; 
+}
+
+.grid-item.wide {
+    height: 260px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.5s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.04);
+}
+
+.site-footer {
+    width: 100%;
+    background-color: #372918; 
+    border-top: 1px solid #1a1b1d; 
+    padding: 60px 0;
+    margin-top: 100px;
+}
+
+.footer-container {
+    width: 84%; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1; 
+}
+
+.footer-name {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    color: #f1ece4;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.footer-name .highlight {
+    color: #bfa054;
+}
+
+.footer-sub {
+    font-size: 13px;
+    color: #7a736a;
+    line-height: 1.5;
+}
+
+.column-title {
+    font-size: 14px;
+    color: #f1ece4;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.contact-item {
+    font-size: 13px;
+    color: #7a736a;
+    margin-bottom: 6px;
+}
+
+.footer-column.copyright {
+    text-align: right; 
+    font-size: 13px;
+    color: #7a736a;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .grid-item.tall {
+        height: 380px;
+        grid-row: span 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: 1fr; 
+    }
+    .grid-item, .grid-item.tall {
+        height: 280px;
+    }
+    .main-footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .copyright-info {
+        text-align: left;
+    }
+}
+
+/* 1. Tạo lớp phủ màu tối mờ mượt mà khi rê chuột vào */
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(55, 41, 24, 0.9) 0%, rgba(55, 41, 24, 0.2) 100%); /* Màu nâu tối đồng bộ nền */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    
+    /* Mặc định sẽ ẩn đi bằng cách cho độ mờ bằng 0 */
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* 2. Định dạng chữ hiển thị sắc nét trên hình ảnh */
+.overlay-text {
+    color: #dfb15b; /* Màu vàng cam đất đặc trưng của bạn */
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    
+    /* Hiệu ứng chữ hơi dịch chuyển nhẹ từ dưới lên khi hiện */
+    transform: translateY(15px);
+    transition: transform 0.4s ease;
+}
+
+/* 3. KÍCH HOẠT HIỆU ỨNG KHI RÊ CHUỘT (HOVER) */
+.grid-item:hover .image-overlay {
+    opacity: 1; /* Hiện lớp phủ lên */
+}
+
+.grid-item:hover .overlay-text {
+    transform: translateY(0); /* Đẩy chữ về vị trí trung tâm chuẩn xác */
+}
+
+/* Khung nền đen mờ bao phủ toàn bộ màn hình */
+.lightbox {
+    display: none; /* Mặc định ẩn đi */
+    position: fixed;
+    z-index: 9999; /* Đảm bảo luôn nằm trên cùng tất cả các phần tử */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 19, 13, 0.95); /* Màu nâu đen tối đồng bộ với web */
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out; /* Đổi icon chuột thành kính lúp thu nhỏ khi rê ra ngoài */
+}
+
+/* Định dạng bức ảnh khi được phóng to */
+.lightbox-content {
+    max-width: 85%;
+    max-height: 85%;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    
+    /* Hiệu ứng phóng to mượt mà khi xuất hiện */
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Nút bấm dấu X để đóng ảnh */
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #dfb15b; /* Màu vàng cam đất */
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.lightbox-close:hover {
+    color: #ffffff;
+}
+
+/* ==================== CẤU HÌNH MENU MOBILE CHO TRANG QUÊ HƯƠNG ==================== */
+
+/* Định dạng nút bấm 3 gạch (☰) để mở menu */
+.menu-button {
+    display: none; /* Mặc định ẩn trên máy tính */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Định dạng nút bấm dấu X để đóng menu */
+.close-button {
+    display: none; /* Mặc định ẩn trên máy tính */
+    position: absolute;  
+    top: 25px;           
+    right: 25px;         
+    background: none;    
+    border: none;        
+    color: white;      
+    font-size: 36px;     
+    cursor: pointer;     
+    z-index: 10000;
+}
+
+/* Cấu hình thay đổi giao diện khi co màn hình về kích thước điện thoại */
+@media screen and (max-width: 768px) {
+    /* Hiện các nút bấm menu điều khiển điều hướng */
+    .menu-button, .close-button {
+        display: block; 
+    }
+
+    /* Định hình lại cấu trúc thanh menu thành bảng dọc toàn màn hình */
+    .mt-menu {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Giấu menu hoàn toàn sang bên phải */
+        width: 100%;
+        height: 100vh;
+        background-color: #372918; /* Màu nâu tối đồng bộ nền */
+        flex-direction: column; /* Chuyển từ hàng ngang sang hàng dọc */
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        z-index: 9999;
+        transition: right 0.3s ease; /* Hiệu ứng lướt mịn màng */
+    }
+
+    /* ĐÂY LÀ ĐOẠN QUAN TRỌNG NHẤT: Thêm lớp kích hoạt trượt ra khi bấm ☰ */
+    .mt-menu.open {
+        right: 0;
+    }
+
+    /* Điều chỉnh lại vị trí gạch chân khi chữ đổi hướng xếp dọc */
+    .mt-link.active::after {
+        bottom: -8px;
+    }
+}

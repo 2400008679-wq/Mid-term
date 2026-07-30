@@ -1,0 +1,385 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #372918;
+    background-size: cover;          
+    background-position: center;     
+    background-repeat: no-repeat;   
+    background-attachment: fixed;    
+}
+
+.hometown-section {
+    width: 84%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hometown-header {
+    max-width: 800px;                       
+}
+
+.hometown-sub {
+    font-size: 13px;
+    color: #d16f4f;                       
+    letter-spacing: 2px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.hometown-main-title {
+    font-family: "Playfair Display", serif;
+    font-size: 56px;
+    color: #f1ece4;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.hometown-intro-text {
+    font-size: 16px;
+    color: #a3998d;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.hometown-note {
+    font-size: 14px;
+    color: #d16f4f;                         
+    font-style: italic;
+}
+
+.scenery-card {
+    position: relative;                    
+    width: 100%;
+    height: 550px;                         
+    border-radius: 24px;                    
+    overflow: hidden;                       
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.scenery-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.2) 60%, transparent 100%);
+    z-index: 1;
+}
+
+.scenery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;                      
+    object-position: center;
+    transition: transform 0.5s ease;      
+}
+
+.scenery-card:hover .scenery-img {
+    transform: scale(1.03);                
+}
+
+.photo-badge {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-color: rgba(0, 0, 0, 0.6);   
+    color: #e7e0d5;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    z-index: 2;
+}
+
+.scenery-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 50px;                    
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 2;                             
+    box-sizing: border-box;
+}
+
+.scenery-category {
+    font-size: 12px;
+    color: #d16f4f;                        
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.scenery-title {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    color: #f1ece4;
+    font-weight: 500;
+}
+
+.scenery-desc {
+    font-size: 15px;
+    color: #bcb3a6;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.view-album-link {
+    color: #d16f4f;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.view-album-link:hover {
+    color: #f1ece4;
+    text-decoration: underline;           
+}
+
+@media screen and (max-width: 768px) {
+    .hometown-main-title {
+        font-size: 36px;
+    }
+    .scenery-card {
+        height: 400px;                    
+    }
+    .scenery-content {
+        padding: 25px;
+    }
+    .scenery-title {
+        font-size: 24px;
+    }
+}
+
+.hometown-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);   
+    gap: 25px;                               
+    width: 100%;
+}
+
+.scenery-card.large-row {
+    grid-column: span 2;                    
+    height: 500px;                          
+}
+
+.scenery-card.small-card {
+    height: 380px;                          
+}
+
+.scenery-card.small-card .scenery-content {
+    padding: 30px;                           
+    gap: 8px;
+}
+
+.scenery-card.small-card .scenery-title {
+    font-size: 24px;                         
+}
+
+.scenery-card.small-card .scenery-desc {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+    .hometown-grid {
+        grid-template-columns: 1fr;        
+        gap: 20px;
+    }
+    
+    .scenery-card.large-row {
+        grid-column: span 1;                 
+        height: 350px;
+    }
+    
+    .scenery-card.small-card {
+        height: 350px;
+    }
+}
+
+.site-footer {
+    width: 100%;
+    background-color: #372918; 
+    border-top: 1px solid #1a1b1d; 
+    padding: 60px 0;
+    margin-top: 100px;
+}
+
+.footer-container {
+    width: 84%; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1; 
+}
+
+.footer-name {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    color: #f1ece4;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.footer-name .highlight {
+    color: #bfa054;
+}
+
+.footer-sub {
+    font-size: 13px;
+    color: #7a736a;
+    line-height: 1.5;
+}
+
+.column-title {
+    font-size: 14px;
+    color: #f1ece4;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.contact-item {
+    font-size: 13px;
+    color: #7a736a;
+    margin-bottom: 6px;
+}
+
+.footer-column.copyright {
+    text-align: right; 
+    font-size: 13px;
+    color: #7a736a;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+    .site-footer {
+        padding: 40px 0;
+        margin-top: 60px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: left; 
+    }
+
+    .footer-column.copyright {
+        text-align: left; 
+    }
+}
+
+/* --- GIAO DIỆN HỘP THOẠI LIGHTBOX PHÓNG TO --- */
+.lightbox {
+    display: none; /* Mặc định ẩn đi */
+    position: fixed;
+    z-index: 9999; /* Luôn nằm trên cùng toàn trang */
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Nền tối mờ 90% */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.lightbox-content {
+    position: relative;
+    width: 90%;
+    max-width: 1100px;
+    background-color: #0b0c0e; /* Màu nền đen tối giống ảnh chuẩn */
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #2a2b2d;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tiêu đề góc trên */
+.lightbox-header {
+    padding: 25px 35px 15px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+}
+.lightbox-category {
+    font-size: 11px;
+    color: #bfa054;
+    letter-spacing: 2px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+.lightbox-title {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    color: #f1ece4;
+    margin: 0;
+}
+
+/* Vùng chứa ảnh chính */
+.img-container {
+    width: 100%;
+    height: 65vh; /* Chiếm 65% chiều cao màn hình */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+.img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Giữ nguyên tỷ lệ ảnh không bị vỡ */
+}
+
+/* Nút đóng (X) */
+.close-btn {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: #f1ece4;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10000;
+    transition: 0.3s;
+    background: rgba(255,255,255,0.1);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.close-btn:hover { color: #bfa054; background: rgba(255,255,255,0.2); }
+
+/* Nút điều hướng mũi tên (< và >) */
+.nav-btn {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f1ece4;
+    border: none;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-btn:hover { background-color: rgba(255, 255, 255, 0.3); color: #bfa054; }
+.prev-btn { left: 25px; }
+.next-btn { right: 25px; }

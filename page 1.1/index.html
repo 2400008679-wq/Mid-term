@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio của tôi</title>
+    <link rel="stylesheet" href="style1.css">
+    <!-- Font chữ từ Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">MT</a>
+        <nav class="mt-menu" id="mtMenu">
+            <a href="#home" class="mt-link active">Portfolio</a>
+            <a href="index2.html" class="mt-link">Quê hương</a>
+            <a href="#projects" class="mt-link">Album</a>
+            <a href="#contact" class="contact-button">Liên hệ</a>
+        </nav>
+        <!-- Nút menu trên điện thoại -->
+        <button class="menu-button" id="menuButton">☰</button>
+    </header>
+
+    <main>
+        <section class="intro hero-container" id="home">
+            <div class="hero-left">
+                <p class="small-title">XIN CHÀO, TÔI LÀ</p>
+                <h1 class="main-title">
+                    Trương Thị
+                    <span>Minh Thư</span>
+                </h1>
+                <p class="job-title">
+                    Sinh viên : Chuyên ngành Kỹ Thuật Phần Mềm
+                </p>
+                <p class="mo-ta">
+                    Tôi không chỉ muốn viết code để tạo ra một website.
+                    Tôi muốn mỗi giao diện mình tạo ra đều có một câu chuyện,
+                    <strong>một cảm xúc</strong> và
+                    <strong>một dấu ấn riêng</strong>.
+                </p>
+                <div class="khoi-nut-bam">
+                    <a href="#projects" class="nut-du-an">Xem dự án</a>
+                    <a href="#contact" class="nut-lien-he">Liên hệ tôi</a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="vong-tron">
+                    <img src="1.jpg" alt="Chân dung" class="vong-tron-avatar">
+                </div>
+            </div>
+        </section>
+
+        <!-- Khung chứa thanh kỹ năng -->
+            <div class="skills-marquee">
+                <div class="marquee-content">
+                <!-- Cụm chữ lần 1 -->
+                    <span>HTML</span> <span class="dot">•</span>
+                    <span>CSS</span> <span class="dot">•</span>
+                    <span>JAVASCRIPT</span> <span class="dot">•</span>
+                    <span>UI/UX</span> <span class="dot">•</span>
+                    <span>FIGMA</span> <span class="dot">•</span>
+                <!-- Cụm chữ lần 2 -->
+                    <span>HTML</span> <span class="dot">•</span>
+                    <span>CSS</span> <span class="dot">•</span>
+                    <span>JAVASCRIPT</span> <span class="dot">•</span>
+                    <span>UI/UX</span> <span class="dot">•</span>
+                    <span>FIGMA</span> <span class="dot">•</span>
+                </div>
+            </div>
+        <section class="about-section" id="about">
+            <!-- TIÊU ĐỀ: Về tôi -->
+            <div class="about-header">
+                <span class="about-number">01.</span>
+                <h2 class="about-title">Về tôi</h2>
+            </div>
+
+            <p class="about-description">
+                "Hiện là sinh viên năm 3 ngành Công nghệ Thông tin, tôi chọn định hình bản thân qua lăng kính của một nhà thiết kế web. Với tôi, một sản phẩm hoàn thiện không chỉ dừng lại ở việc chạy đúng, chạy đủ, mà phải mang lại sự tinh tế và tối ưu nhất cho người trải nghiệm."
+            </p>
+
+            <div class="stats-container">
+                <!-- Hộp 1 -->
+                <div class="stat-card">
+                    <h3 class="stat-number">2+</h3>
+                    <p class="stat-text">Năm học lập trình</p>
+                </div>
+
+                <!-- Hộp 2 -->
+                <div class="stat-card">
+                    <h3 class="stat-number">3.5</h3>
+                    <p class="stat-text">GPA</p>
+                </div>
+
+                <!-- Hộp 3 -->
+                <div class="stat-card">
+                    <h3 class="stat-number">5</h3>
+                    <p class="stat-text">Công nghệ thành thạo</p>
+                </div>
+            </div>
+        </section>
+                <section class="skills-section" id="skills">
+                <!-- TIÊU ĐỀ: 02 . KỸ NĂNG -->
+                <div class="skills-header">
+                    <span class="skills-number">02 . KỸ NĂNG</span>
+                    <h2 class="skills-title">Bộ công cụ của tôi</h2>
+                </div>
+
+                <div class="skills-grid">
+                    
+                    <!-- Hộp 1: Lập trình -->
+                    <div class="skill-card">
+                        <div class="skill-icon icon-code">&lt;/&gt;</div>
+                        <h3 class="skill-card-title">Lập trình</h3>
+                        <ul class="skill-list">
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>Java, C#</li>
+                        </ul>
+                    </div>
+
+                    <!-- Hộp 2: Thiết kế -->
+                    <div class="skill-card highlight-card"> 
+                        <div class="skill-icon icon-design">🎨</div>
+                        <h3 class="skill-card-title">Thiết kế</h3>
+                        <ul class="skill-list">
+                            <li>HTML / CSS</li>
+                            <li>Figma</li>
+                            <li>UI/UX cơ bản</li>
+                        </ul>
+                    </div>
+
+                    <!-- Hộp 3: Kỹ thuật -->
+                    <div class="skill-card">
+                        <div class="skill-icon icon-tech">⚙️</div>
+                        <h3 class="skill-card-title">Kỹ thuật</h3>
+                        <ul class="skill-list">
+                            <li>Git / GitHub</li>
+                            <li>SQL, MongoDB</li>
+                            <li>Google skills</li>
+                            <li>Coursera</li>
+                        </ul>
+                    </div>
+
+                    <!-- Hộp 4: Kỹ năng mềm -->
+                    <div class="skill-card">
+                        <div class="skill-icon icon-soft">✨</div>
+                        <h3 class="skill-card-title">Kỹ năng mềm</h3>
+                        <ul class="skill-list">
+                            <li>Làm việc nhóm</li>
+                            <li>Giải quyết vấn đề</li>
+                            <li>Học nhanh</li>
+                            <li>Tiếng Anh giao tiếp</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <section class="projects-section" id="projects">
+                <div class="projects-header">
+                    <span class="projects-number">03 . DỰ ÁN</span>
+                    <h2 class="projects-title">Dự án tiêu biểu</h2>
+                </div>
+
+                <div class="projects-list">
+                    
+                    <!-- Dự án 01 -->
+                    <a href="#" class="project-row">
+                        <div class="project-id">01</div>
+                        
+                        <div class="project-info">
+                            <h3 class="project-name">Hệ thống quản lý ký túc xá</h3>
+                            <p class="project-desc">Ứng dụng web quản lý sinh viên</p>
+                            <div class="project-tags">
+                                <span class="tag">SQL</span>
+                                <span class="tag">Draw.io</span>
+                                <span class="tag">SQL Sever</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Phần thời gian và nút mũi tên -->
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-arrow">→</span>
+                        </div>
+                    </a>
+
+                    <!-- Dự án 02 -->
+                    <a href="#" class="project-row">
+                        <div class="project-id">02</div>
+                        <div class="project-info">
+                            <h3 class="project-name">FastSave-Vị Ngon Tiết Kiệm</h3>
+                            <p class="project-desc">App giúp sinh viên ăn trưa tiện lợi và tiết kiệm</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">Lovable</span>
+                            </div>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-year">2026</span>
+                            <span class="project-arrow">→</span>
+                        </div>
+                    </a>
+
+                    <!-- Dự án 03 -->
+                    <a href="#" class="project-row">
+                        <div class="project-id">03</div>
+                        <div class="project-info">
+                            <h3 class="project-name">Page quê hương</h3>
+                            <p class="project-desc">Trang giới thiệu Sóc Trăng với hiệu ứng cuộn và gallery ảnh động.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JS</span>
+                            </div>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-year">2026</span>
+                            <span class="project-arrow">→</span>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
+            <section class="timeline-section" id="journey">
+                <div class="timeline-header">
+                    <span class="timeline-number">04 . HÀNH TRÌNH</span>
+                    <h2 class="timeline-title">Định hướng nghề nghiệp</h2>
+                </div>
+
+                <div class="timeline-container">
+                    
+                    <!-- Mốc 1: Bên trái -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2024</span>
+                            <h3 class="timeline-item-title">Bắt đầu Đại học</h3>
+                            <p class="timeline-desc">Nhập học ngành Kỹ sư Phần mềm.</p>
+                        </div>
+                    </div>
+
+                    <!-- Mốc 2: Bên phải -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2024</span>
+                            <h3 class="timeline-item-title">Dự án đầu tay</h3>
+                            <p class="timeline-desc">Hoàn thành đồ án lập trình.</p>
+                        </div>
+                    </div>
+
+                    <!-- Mốc 3: Bên trái -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2027</span>
+                            <h3 class="timeline-item-title">Thực tập</h3>
+                            <p class="timeline-desc">Thực tập lập trình web tại công ty công nghệ.</p>
+                        </div>
+                    </div>
+
+                    <!-- Mốc 4: Bên phải -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2028</span>
+                            <h3 class="timeline-item-title">Mục tiêu</h3>
+                            <p class="timeline-desc">Trở thành Kỹ Sư Phần Mềm</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- KHỐI LIÊN HỆ VÀ FOOTER -->
+            <footer class="site-footer" id="contact">
+                
+                <!-- 1. HỘP LIÊN HỆ (CONTACT CONTAINER) -->
+                <div class="contact-box">
+                    <span class="contact-sub">LET'S TALK</span>
+                    <h2 class="contact-main-title">Cùng nhau xây dựng điều gì đó <br><span>tuyệt vời.</span></h2>
+                    <p class="contact-desc">Tôi luôn mở cho các cơ hội thực tập, dự án freelance và cộng tác.</p>
+                    
+                    <!-- Các nút liên kết mạng xã hội -->
+                    <div class="social-buttons">
+                        <a href="mailto:minhthu.dev@example.com" class="email-btn">
+                            <span>📩 minhthu.dev@example.com</span>
+                        </a>
+                        <a href="#" class="social-icon-btn">🐙</a> 
+                        <a href="#" class="social-icon-btn">💼</a> 
+                    </div>
+
+                    <!-- Các nút điều hướng phụ -->
+                    <div class="footer-nav-buttons">
+                        <a href="index2.html" class="sub-nav-btn">Khám phá quê hương tôi →</a>
+                        <a href="index3.html" class="sub-nav-btn">Xem bộ sưu tập ảnh →</a>
+                    </div>
+                </div>
+
+                <!-- 2. PHẦN THÔNG TIN CHÂN TRANG (FOOTER BOTTOM) -->
+                <div class="footer-bottom">
+                    <!-- Cột 1: Tên -->
+                    <div class="footer-col">
+                        <h4 class="footer-name">Trương Thị Minh Thư</h4>
+                        <p class="footer-text">Sinh viên Kỹ sư Phần mềm · Sóc Trăng, Việt Nam</p>
+                    </div>
+
+                    <!-- Cột 2: Liên hệ nhanh -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Liên hệ</h4>
+                        <p class="footer-text">minhthu.dev@example.com</p>
+                        <p class="footer-text">+84 · Sóc Trăng</p>
+                    </div>
+
+                    <!-- Cột 3: Bản quyền -->
+                    <div class="footer-col text-right">
+                        <p class="footer-text">© 2026 Minh Thư.</p>
+                        <p class="footer-text">Bài tập Thiết kế & Phát triển Web.</p>
+                    </div>
+                </div>
+
+            </footer>
+
+    </main>
+</body>
+<script src="java1.js"></script>
+
+</html> 
